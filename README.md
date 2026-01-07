@@ -2,8 +2,6 @@
 
 **DocuSense** is an intelligent, document-based Q&A system that allows you to chat with your files (PDF, DOCX, TXT) using advanced local LLMs. It features a modern chat interface, voice interaction, and conversation memory.
 
-![DocuSense UI](https://i.imgur.com/your-image-placeholder.png)
-
 ## Features
 
 -   **📄 Multi-Format Support**: Upload and analyze **PDF**, **DOCX**, and **TXT** files.
@@ -13,6 +11,25 @@
 -   **🧠 Conversation Memory**: Ask follow-up questions (e.g., "Summarize *it*") with context awareness.
 -   **🎨 Modern UI**: Beautiful, responsive "Glassmorphism" interface with Dark/Light accents.
 -   **🔒 Local Privacy**: Powered by **Ollama**, ensuring your documents stay on your machine.
+-   **Semantic Search**: Utilizes SentenceTransformers and FAISS for fast and accurate semantic search.
+
+---
+### Tech Stack
+
+|     Layer      |                      Tools Used                      |
+| -------------- | ---------------------------------------------------- |
+| **Frontend**   | `React.js`, `HTML`, `CSS`                            |
+| **Backend**    | `Flask`, `PyMuPDF` (fitz), `Transformers`            |
+| **NLP Models** | `SentenceTransformers` (MiniLM), `Hugging Face LLMs` |
+| **Search**     | `FAISS`                                              |
+| **Deployment** | `Flask API` (local, extendable to Render/Heroku)     |
+
+---
+### Architecture Diagram
+<img width="877" height="663" alt="arc" src="https://github.com/user-attachments/assets/b868e97d-8662-413e-90b7-4caeae6a9e27" />
+
+---
+
 
 ## Project Structure
 
@@ -72,11 +89,15 @@ npm start
 3.  **Type** or **Speak** your question.
 4.  View the answer and click **Show Debug Info** to see the underlying prompt.
 
-## Technology Stack
+## 🤝 Contributions
+Contributions are welcome!
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Submit a pull request.
 
--   **Backend**: Flask, LangChain (concepts), Ollama (Phi Model)
--   **Frontend**: React, Lucide Icons, CSS Modules
--   **AI**: Phi (via Ollama)
+## Author
 
----
-*Created by [Yeshwanth]*
+**Yeshwanth Goud**
+
+*Data Scientist | Full Stack & ML Enthusiast*
